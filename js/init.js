@@ -1,6 +1,32 @@
 (function ($) {
     $(function () {
 
+        //----Якоря-----------------
+
+        $("#menu").on("click", "a", function (event) {
+
+            event.preventDefault();
+
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+
+            $('body,html').animate({
+                scrollTop: top
+            }, 500);
+
+        });
+        //----!Якоря-----------------
+
+        //----Селекты
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+        //----!Селекты
+
+
+
+
+
         $('.button-collapse').sideNav();
         $('.carousel.carousel-slider').carousel({
             fullWidth: true
@@ -32,8 +58,10 @@
 
                         }
                 ];
-        
+
         Materialize.scrollFire(options);
+
+
 
     }); // end of document ready
 })(jQuery); // end of jQuery name space

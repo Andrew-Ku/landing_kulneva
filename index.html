@@ -42,35 +42,35 @@
                         </div>
                         <div class="col s2"><a class="waves-effect waves-light btn  green accent-4">заказать</a></div>
                     </div>
-                    <div class="row">
+                    <div class="row" id="menu">
                         <div class="col s2 hoverable">
                             <a href="#">
                                 <h6>Главная</h6>
                             </a>
                         </div>
                         <div class="col s2 hoverable">
-                            <a href="#">
-                                <h6>Стоимость</h6>
-                            </a>
-                        </div>
-                        <div class="col s2 hoverable">
-                            <a href="#">
+                            <a href="#index-advantages">
                                 <h6>Преимущества</h6>
                             </a>
                         </div>
                         <div class="col s2 hoverable">
-                            <a href="#">
-                                <h6>Контакты</h6>
-                            </a>
-                        </div>
-                        <div class="col s2 hoverable">
-                            <a href="#">
+                            <a href="#index-work-sample">
                                 <h6>Примеры работ</h6>
                             </a>
                         </div>
                         <div class="col s2 hoverable">
-                            <a href="#">
+                            <a href="#index-prices">
+                                <h6>Стоимость</h6>
+                            </a>
+                        </div>
+                        <div class="col s2 hoverable">
+                            <a href="#index-about-us">
                                 <h6>О нас</h6>
+                            </a>
+                        </div>
+                        <div class="col s2 hoverable">
+                            <a href="#index-contacts">
+                                <h6>Контакты</h6>
                             </a>
                         </div>
                     </div>
@@ -222,10 +222,12 @@
         <div class="container">
             <div class="row">
                 <div class="col s10 testFire">
-                    <h5 class="right light-blue-text">Семейная видеосъемка: как запечатлить и запомнить счастливые моменты?</h5>
-                    <p class="light">Просто доверьтесь профессионалу, который сделает видео историю, которую вы будите пересматривать всю жизнь</p>
+                    <h5 class="left light-blue-text">Семейная видеосъемка: как запечатлить и запомнить счастливые моменты?</h5>
                 </div>
-                   <div class="col s2"><a class="waves-effect waves-light btn  green accent-4">заказать</a></div>
+                <div class="col s2"><a class="waves-effect waves-light btn  green accent-4">заказать</a></div>
+            </div>
+            <div>
+                <p class="light">Просто доверьтесь профессионалу, который сделает видео историю, которую вы будите пересматривать всю жизнь</p>
             </div>
 
         </div>
@@ -234,8 +236,127 @@
 
 
 
-    <!--
-    <footer class="page-footer blue">
+
+
+
+    <!--Стоимость начало-->
+    <div class="section no-pad-bot" id="index-prices">
+        <div class="container">
+            <h4 class="center">Стоимость</h4>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">grade</i></h2>
+                        <h5 class="center">Экономный</h5>
+                        <p class="light center">10000 руб.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center yellow-text"><i class="material-icons">grade</i></h2>
+                        <h5 class="center">Стандартный</h5>
+
+                        <p class="light center">30000 руб.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center green-text"><i class="material-icons">grade</i></h2>
+                        <h5 class="center">Люкс</h5>
+                        <p class="light center">50000 руб.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Стоимость конец-->
+
+
+    <!--Заполение заявки начало-->
+    <div class="section no-pad-bot blue lighten-2 white-text text-darken-2" id="index-demand">
+        <div class="container">
+            <h4 class="center">Оставить заявку</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row ">
+                        <div class="input-field col s12">
+                            <input id="input_text" type="text">
+                            <label for="input_text">Имя</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select>
+                              <option value="" disabled selected>Выберите интересующий прайс</option>
+                              <option value="1" >Экономный</option>
+                              <option value="2">Стандартный</option>
+                              <option value="3">Люкс</option>
+                            </select>
+                            <label>Прайс</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="phone" type="tel" class="validate">
+                            <label for="phone">Телефон</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="comment" class="materialize-textarea"></textarea>
+                            <label for="comment">Комментарий</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!--Заполение заявки конец-->
+
+
+
+    <!--О нас начало-->
+    <div class="section no-pad-bot" id="index-about-us">
+        <div class="container">
+            <h4 class="center">О нас</h4>
+            <div class="row">
+                <div class="col s12 m12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/AboutUs.jpg">
+                            <span class="card-title">Озеро</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Место куда я ездила отдыхать прошлым летом!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--О нас конец-->
+
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer blue" id="index-contacts">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -268,7 +389,7 @@
             </div>
         </div>
     </footer>
--->
+
 
 
     <!-- Модальные окна начало  -->
